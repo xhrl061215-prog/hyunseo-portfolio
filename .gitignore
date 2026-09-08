@@ -40,6 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# CV source PDF — contains personal phone numbers, kept out of the public repo.
-# The redacted version served by the site lives at public/cv.pdf.
-/Hyunseo_Kim_CV_Updated.pdf
+# CV source PDFs stay out of the repo — the copy the site serves is
+# public/cv.pdf. Keeps drafts (and any that still carry phone numbers)
+# from being published by accident.
+/Hyunseo_Kim_CV_*.pdf
