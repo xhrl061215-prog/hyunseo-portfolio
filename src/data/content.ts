@@ -4,7 +4,7 @@
  */
 
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://hyunseo-kim.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://hyunseo-portfolio.vercel.app";
 
 export const profile = {
   name: "Hyunseo Kim",
