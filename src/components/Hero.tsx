@@ -1,5 +1,6 @@
 import { profile } from "@/data/content";
 import { btnGhost, btnPrimary } from "@/lib/styles";
+import { withKorean } from "@/lib/text";
 import ArrowUpRight from "./ArrowUpRight";
 
 export default function Hero() {
@@ -14,15 +15,11 @@ export default function Hero() {
       </h1>
 
       <p className="mt-5 text-lg text-ink md:text-xl">
-        {profile.role}
-        <span aria-hidden="true" className="mx-2 text-muted/50">
-          /
-        </span>
-        <span className="text-muted">{profile.institution}</span>
+        {withKorean(profile.headline)}
       </p>
 
       <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
-        {profile.tagline}
+        {withKorean(profile.tagline)}
       </p>
 
       <div className="mt-9 flex flex-wrap gap-3">

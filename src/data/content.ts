@@ -14,8 +14,10 @@ export const profile = {
   email: "hyunseo.kim25@imperial.ac.uk",
   linkedin: "https://www.linkedin.com/in/hyunseolilykim/",
   cv: "/cv.pdf",
+  /** Display line under the name. `role` stays factual for <title> and JSON-LD. */
+  headline: "A 다정한 Biomedical Engineer",
   tagline:
-    "Biomedical engineering at the point where medical devices, soft robotics, and computational methods meet.",
+    "“다정한” — to approach people with compassion and curiosity: to notice their vulnerabilities, wonder about their inner worlds, and build with the human experience always in view.",
   metaDescription:
     "Hyunseo Kim — MEng Biomedical Engineering student at Imperial College London. Medical devices, soft robotics, machine learning, and rapid prototyping.",
 } as const;

@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+/*
+ * Noto Sans KR, subset by Google's `text=` API to just the glyphs used in the
+ * hero (다정한) — 4.5KB, self-hosted, no external request. SIL Open Font License.
+ * The unicode-range is deliberately narrow: any *other* Korean added later
+ * falls through to the OS faces listed after it in --font-sans, so new text
+ * still renders rather than showing tofu.
+ */
+@font-face {
+  font-family: "Noto Sans KR Subset";
+  src: url("/fonts/noto-sans-kr-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1103, U+110C, U+1112, U+1161, U+1165, U+11AB, U+11BC, U+B2E4,
+    U+B2E8, U+B2F9, U+B354, U+B358, U+B369, U+C790, U+C794, U+C7A5, U+C800,
+    U+C804, U+C815, U+D558, U+D55C, U+D56D, U+D5C8, U+D5CC, U+D5DD;
+}
+
 @theme {
   /* Palette — light only, editorial paper */
   --color-paper: #fbfaf8;
@@ -11,7 +29,9 @@
   --color-accent-soft: #eef3f7;
 
   /* Type */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-inter), "Noto Sans KR Subset", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans CJK KR", "Noto Sans KR", ui-sans-serif,
+    system-ui, -apple-system, sans-serif;
   --font-serif: var(--font-newsreader), ui-serif, Georgia, "Times New Roman", serif;
   --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
