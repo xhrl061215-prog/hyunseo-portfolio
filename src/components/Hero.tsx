@@ -15,6 +15,14 @@ export default function Hero() {
       </h1>
 
       <p className="mt-5 text-lg text-ink md:text-xl">
+        {profile.role}
+        <span aria-hidden="true" className="mx-2 text-muted/50">
+          /
+        </span>
+        <span className="text-muted">{profile.institution}</span>
+      </p>
+
+      <p className="mt-3 text-lg text-ink md:text-xl">
         {withKorean(profile.headline)}
       </p>
 
